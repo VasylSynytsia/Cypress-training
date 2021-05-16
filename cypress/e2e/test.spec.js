@@ -7,6 +7,7 @@ describe('Suite 1', ()=>{
         cy.visit("cypress/index.html")
 
     //test
+    //check git hub
 
         
     })
