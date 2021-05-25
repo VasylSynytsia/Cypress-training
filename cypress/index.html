@@ -96,7 +96,7 @@
 
     <select name="courses" id="courses">
         <option value="cypress">cypress</option>
-        <option value="selenium">selenium</option>
+        <option value="selenium2">selenium1</option>
         <option value="appium">appium</option>
         <option value="wdio">wdio</option>
     </select>
@@ -112,32 +112,32 @@
         <tr>
             <td>Invoice_001</td>
             <td>200</td>
-            <td><button class="btn btn-primary">Download invoice</button></td>
+            <td><button data-cy="milticlick" class="btn btn-primary">Download invoice</button></td>
         </tr>
         <tr>
             <td>Invoice_002</td>
             <td>150</td>
-            <td><button class="btn btn-primary">Download invoice</button></td>
+            <td><button data-cy="milticlick" class="btn btn-primary">Download invoice</button></td>
         </tr>
         <tr>
             <td>Invoice_003</td>
             <td>100</td>
-            <td><button class="btn btn-primary">Download invoice</button></td>
+            <td><button data-cy="milticlick" class="btn btn-primary">Download invoice</button></td>
         </tr>
         <tr>
             <td>Invoice_004</td>
             <td>80</td>
-            <td><button class="btn btn-primary">Download invoice</button></td>
+            <td><button data-cy="milticlick" class="btn btn-primary">Download invoice</button></td>
         </tr>
         <tr>
             <td>Invoice_005</td>
             <td>300</td>
-            <td><button class="btn btn-primary">Download invoice</button></td>
+            <td><button data-cy="milticlick" class="btn btn-primary">Download invoice</button></td>
         </tr>
         <tr>
             <td>Invoice_006</td>
             <td>25</td>
-            <td><button class="btn btn-primary">Download invoice</button></td>
+            <td><button data-cy="milticlick" class="btn btn-primary">Download invoice</button></td>
         </tr>
     </table>
     <hr>
@@ -210,7 +210,7 @@
             <input data-cy="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
             <div class="checkbox mb-3">
                 <label>
-                    <input type="checkbox" value="remember-me"> Remember me
+                    <input class="RememberMe" type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
             <button data-cy="login" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
