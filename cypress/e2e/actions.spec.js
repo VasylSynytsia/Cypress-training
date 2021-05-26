@@ -40,6 +40,8 @@ describe('Suite 1', ()=>{
         cy.get('.mb-3').blur()
     })*/
 
-    
+    it("hover and long press", function(){
+        cy.get('[data-cy=login]').trigger('mouseover')
+    })
     
 })
