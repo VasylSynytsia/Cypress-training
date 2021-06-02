@@ -30,5 +30,20 @@ describe('Suite 2', ()=>{
         cy.get('[data-cy=name]').should('be.disabled')
     })
 
+    it("find by attribute", function(){
+        cy.get('.random-image').should('have.attr', 'src', 'https://picsum.photos/seed/picsum/700/500')
+        cy.get('.random-image').should('have.attr', 'src').and('eql', 'https://picsum.photos/seed/picsum/700/500')
+    })
+
+    it('find by value', function(){
+        cy.get('[data-cy=email]').type('vasyatest@email.com').should('have.value', 'vasyatest@email.com')
+    })
+
+    it('test', function(){
+        //cy.get('#courses').select('appium').should('be.selected')!!!
+        cy.get('#inputPassword').click().should('be.focused')
+        cy.get('#Fries').click().should('be.checked')
+    })
+
 
 })
