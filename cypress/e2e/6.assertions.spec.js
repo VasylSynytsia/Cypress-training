@@ -7,7 +7,7 @@ describe('Suite 2', ()=>{
     })
 
     it("find by text", function(){
-        cy.get('body > :nth-child(8)').should('contain', 'list of')
+        cy.get('body > :nth-child(10)').should('contain', 'list of')
         cy.get('.course-list > .list2').should('have.text', 'Selenium')
     })
 
