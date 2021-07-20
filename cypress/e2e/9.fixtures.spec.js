@@ -17,9 +17,9 @@ describe("Suite 5",() => {
         })
     })
 
-    beforeEach (() => {
-        cy.fixture('user').as('user')
-    })
+    //beforeEach (() => {
+    //    cy.fixture('user').as('user')
+    //})
 
     it("Create varieble for test", function () {
         cy.get('@user').then(user => {
@@ -27,4 +27,25 @@ describe("Suite 5",() => {
         })
     })
 
+    beforeEach(() => {
+        cy.fixture('user').then(user => {
+            user.email = 'VasyanSin@email.com'
+        }).as('user')
+    })
+
+    it("5th lesson", function () {
+        cy.get('@user').then(user => {
+            cy.log(user)
+        })
+    })
+
+    it("6th - lesson", function () {
+        cy.readFile('example.txt')
+        cy.writeFile('example.txt', 'It is long way')
+    })
+
 })
+
+
+
+
